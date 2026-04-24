@@ -91,6 +91,6 @@ Looking for a dedicated BIM/VDC professional to protect your project margins and
 <a href="https://linkedin.com/in/darjiparth853/"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="LINK_TO_RESUME_PDF_OR_DRIVE"><img src="https://img.shields.io/badge/📄%20Download%20Resume-252525?style=for-the-badge" alt="Resume" /></a>
 
-*Parth Rajendrakumar Darji © 2024 | Built with precision.*
+*Parth Rajendrakumar Darji © 2024 | Engineered with intent.*
 
 </div>
