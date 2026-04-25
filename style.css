@@ -366,7 +366,7 @@ h1, h2, h3, h4 {
     position: relative;
     transform-style: preserve-3d;
     width: 100%;
-    max-width: 330px;
+    max-width: 280px;
     margin: 0 auto;
 }
 
