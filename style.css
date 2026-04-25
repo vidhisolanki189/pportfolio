@@ -355,12 +355,18 @@ h1, h2, h3, h4 {
 .badge span { color: var(--primary); }
 
 /* 3D Tilt Card in Hero */
-.hero-visual { perspective: 1000px; }
+.hero-visual { 
+    perspective: 1000px; 
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+}
+.tilt-card { transform-style: preserve-3d; }
 .3d-element {
     position: relative;
     transform-style: preserve-3d;
     width: 100%;
-    max-width: 420px;
+    max-width: 330px;
     margin: 0 auto;
 }
 
@@ -370,8 +376,14 @@ h1, h2, h3, h4 {
     aspect-ratio: 4/5;
     object-fit: cover;
     border-radius: 24px;
-    border: 1px solid var(--surface-border);
+    border: 2px solid var(--surface-border);
     box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 40px rgba(0,255,213,0.1);
+    transition: var(--transition-smooth);
+}
+
+.tilt-card:hover .hero-portrait {
+    border-color: rgba(0, 255, 213, 0.4);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 60px rgba(0,255,213,0.3);
 }
 
 .floating-glass-card {
@@ -383,7 +395,7 @@ h1, h2, h3, h4 {
     border-radius: 16px;
     padding: 16px 24px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    transform: translateZ(50px); /* Makes cards pop out in 3D */
+    transform: translateZ(60px);
 }
 
 .floating-glass-card h4 {
@@ -393,9 +405,9 @@ h1, h2, h3, h4 {
 }
 .floating-glass-card p { color: var(--muted); font-size: 0.85rem; font-weight: 500; }
 
-.stat-card-1 { top: 10%; right: -30px; }
-.stat-card-2 { bottom: 20%; left: -30px; transform: translateZ(70px); }
-.tech-stack-card { bottom: -20px; right: 20px; display: flex; gap: 8px; padding: 12px 20px; transform: translateZ(40px); }
+.stat-card-1 { top: 15%; right: -40px; transform: translateZ(60px); }
+.stat-card-2 { bottom: 15%; left: -40px; transform: translateZ(90px); }
+.tech-stack-card { bottom: -25px; right: 10px; display: flex; gap: 8px; padding: 12px 20px; transform: translateZ(45px); }
 
 .tech-stack-card span {
     padding: 4px 12px;
@@ -576,9 +588,9 @@ footer { border-top: 1px solid var(--surface-border); padding: 40px 24px; text-a
     .hero { text-align: center; padding-top: 120px; }
     .hero-actions { justify-content: center; }
     .trust-badges { justify-content: center; }
-    .3d-element { margin: 60px auto 0; max-width: 400px; }
-    .stat-card-1 { right: -10px; }
-    .stat-card-2 { left: -10px; }
+    .3d-element { margin: 60px auto 0; max-width: 320px; }
+    .stat-card-1 { right: -20px; }
+    .stat-card-2 { left: -20px; }
 }
 
 @media (max-width: 768px) {
