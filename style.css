@@ -588,7 +588,7 @@ footer { border-top: 1px solid var(--surface-border); padding: 40px 24px; text-a
     .hero { text-align: center; padding-top: 120px; }
     .hero-actions { justify-content: center; }
     .trust-badges { justify-content: center; }
-    .3d-element { margin: 60px auto 0; max-width: 320px; }
+    .3d-element { margin: 60px auto 0; max-width: 260px; }
     .stat-card-1 { right: -20px; }
     .stat-card-2 { left: -20px; }
 }
